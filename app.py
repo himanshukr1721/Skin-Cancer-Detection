@@ -123,17 +123,16 @@ if model is not None:
         st.subheader("Medical History")
         family_history = st.selectbox("Family History of Skin Cancer", ["No", "Yes"])
         
-        st.subheader("Lesion Characteristics")
-        diameter_mm = st.number_input("Diameter of lesion(mm)", min_value=0.0, max_value=20.0, value=3.0, step=0.1)
         
-        st.subheader("Symptoms")
+        st.subheader("Symptoms of Lesion")
         itchiness = st.selectbox("Itchiness", ["No", "Yes"])
         bleeding = st.selectbox("Bleeding", ["No", "Yes"])
         
-        st.subheader("ABCDE Criteria")
+        st.subheader("ABCDE Criteria of Lesion")
         asymmetry = st.selectbox("Asymmetry", ["No", "Yes"])
         border_irregularity = st.selectbox("Border Irregularity", ["No", "Yes"])
         color_variation = st.selectbox("Color Variation", ["No", "Yes"])
+        diameter_mm = st.number_input("Diameter of lesion(mm)", min_value=0.0, max_value=20.0, value=3.0, step=0.1)
         evolution = st.selectbox("Evolution (Changes over time)", ["No", "Yes"])
         
         submit_button = st.form_submit_button("🔍 Analyze Risk")
