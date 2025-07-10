@@ -118,13 +118,13 @@ if model is not None:
         ])
         
         sun_exposure = st.selectbox("Sun Exposure", ["Low", "Moderate", "High"])
+        mole_count = st.number_input("Number of Moles", min_value=0, max_value=20, value=3)
         
         st.subheader("Medical History")
         family_history = st.selectbox("Family History of Skin Cancer", ["No", "Yes"])
         
-        st.subheader("Mole Characteristics")
-        mole_count = st.number_input("Number of Moles", min_value=0, max_value=20, value=3)
-        diameter_mm = st.number_input("Diameter (mm)", min_value=0.0, max_value=20.0, value=3.0, step=0.1)
+        st.subheader("Lesion Characteristics")
+        diameter_mm = st.number_input("Diameter of lesion(mm)", min_value=0.0, max_value=20.0, value=3.0, step=0.1)
         
         st.subheader("Symptoms")
         itchiness = st.selectbox("Itchiness", ["No", "Yes"])
