@@ -1,7 +1,7 @@
 # Skin Cancer Prediction Project
 
 A machine learning project to predict skin cancer using patient data.
-
+Deployed Link :- https://skinsafe-ai.streamlit.app/
 ## About
 
 This project uses machine learning to predict skin cancer based on patient information and clinical features. It compares different algorithms and saves the best performing model.
